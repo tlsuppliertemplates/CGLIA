@@ -1,0 +1,225 @@
+ /**fonts: font-family: 'Raleway', sans-serif;  font-family: 'Montserrat', sans-serif; ****/ 
+ @font-face {
+  font-family: 'WixMadeforText';
+  src: url('../fonts/WixMadeforText-VariableFont_wght.ttf') format('truetype');
+  /* Add other font formats if applicable */
+}
+ body {font-size: 16px; line-height: 25px; background-color: #fff; color:#25333c; margin: 0; padding: 0;font-family: 'WixMadeforText', sans-serif;  font-weight: 400; }
+ /* h1, h2, h3, h4, h5, h6 { font-family: 'Raleway', sans-serif; } */
+ p{ font-size: 16px; line-height:24px; letter-spacing: 0.2px;}
+ button,a,.btn { transition: all ease-in-out 0.3s; }
+ a:hover, a:focus{ text-decoration: none;}
+ img{
+  object-fit: cover;
+  width: 100%;
+ }
+h1{font-size: 40px; line-height: 54px;}
+h2{font-size: 30px; line-height: 32px;}
+h3{font-size: 28px; line-height: 30px;}
+h4{font-size: 24px; line-height: 24px;}
+h5{font-size: 24px; line-height: 32px;}
+h6{font-size: 22px; line-height: 32px;}
+ .text-center { text-align: center !important; }
+ .text-right { text-align: right !important; }
+ .br_10{border-radius: 10px;}
+ .display-block{
+  display: block;
+ }
+.width-120{
+  width:120px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-weight-500{
+      font-weight: 500;
+}
+
+/* headerStylesStartsHere */
+header{
+  padding: 16px 0;
+}
+header ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+}
+.logo-cglia{
+  width: 154px;
+  height: auto;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #212529 !important;
+}
+/* headerStylesEndsHere */
+.navbar-light .navbar-nav .nav-link {
+  padding: 6px 12px !important;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
+  background: #fff;
+  padding: 6px 12px !important;
+}
+
+.primary_btn{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding:9px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #b01f23;
+}
+.primary_btn:hover{
+  transition: 0.5s;
+  color: #fff;
+  background: #002967 !important;
+}
+.banner_section .primary_btn:hover{
+  border: 1px solid #fff;
+}
+.banner_section{
+  background: #002967;
+  padding:10px 0;
+}
+.banner_section h1, .banner_section p{
+  color: #fff;
+}
+.banner_section img{
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.right_symbol{
+  color:#b01f23;
+  position: relative;
+}
+.right_symbol span img{
+  object-fit: cover;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: -25px; 
+}
+.rna-image{
+  height: 100%;
+  margin-left: 16px;
+}
+.secondary-color-fg{
+  color: #b01f23;
+  font-weight: 600;
+}
+.link-hover{
+  text-decoration: underline;
+}
+.link-hover:hover{
+  color: #f50a12 !important;
+  cursor: pointer;
+}
+.navbar-light .navbar-nav .nav-link.primary_btn{
+  color: white !important;
+}
+
+/************************* About Section Start Here ********************************/
+.about_section {
+  padding: 40px 0 0;
+}
+.about_section h2 span img{
+  width:20px;
+}
+.company_pera a{
+  color: #f2a341;
+  text-transform: uppercase;
+}
+.company_pera a:hover{
+  color: #1ca6af;
+  text-decoration: underline;
+}
+.icon_shape{
+  background:#335485;
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  padding: 19px 0;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.icon_shape svg{
+  width:60px;
+  height:60px;
+}
+.icon_shape path {
+  fill: #ffffff;
+}
+.icon_shape:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: dashed 2px #b01f23;
+  border-radius: 70px;
+  animation: anim 90s linear  infinite;
+} 
+ @keyframes ani {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @keyframes anim {
+   from {
+     transform: rotate(360deg);
+   }
+   to {
+     transform: rotate(0deg);
+   }
+ }
+
+
+/* Animations */
+/* Add your own styling as needed */
+.fade-from-left, .fade-from-right {
+  width: 50%;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(-100%); /* Move the element outside the container to the left */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Smooth transition */
+}
+
+/* Clear floats to make sure sections do not overlap */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Add your own styling as needed */
+/* .rotate-image {
+  
+} */
+
+.rotate-image img {
+  width: 100%;
+  height: auto;
+  animation: rotate 2.5s linear; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(340deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
