@@ -110,7 +110,10 @@ header ul li{
   width: 20px;
   position: absolute;
   top: 0;
-  right: -25px; 
+  left: -35px; 
+}
+p{
+  text-align: justify;
 }
 .rna-image{
   height: 100%;
@@ -194,7 +197,7 @@ header ul li{
  .service-bg{
   background-color: aliceblue;
   padding-top: 25px !important;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   background: linear-gradient(rgba(197, 220, 255, 0.9), rgba(197, 220, 255, 0.9)), url(./images/BG.jpg);
  }
 /* Animations */
